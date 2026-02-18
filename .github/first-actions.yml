@@ -11,3 +11,11 @@ jobs:
 
       - name: Print Hello, World
         run: echo "🎉 Hello, GitHub Actions!"
+
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: set up java 17
+        users: actions/setup-java@v4
+        with:
+         java-version: '17' 
